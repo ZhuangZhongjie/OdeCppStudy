@@ -53,21 +53,13 @@ public:
 };
 
 
-
-
-void test_ode_cpp(int argc, char **argv)
-{
-
-}
-
-
 // main function
 int main (int argc, char **argv)
 {
 	ITest * test = NULL;
 
+	// create different test classes here
 	test = new FallingForeverTest();
-
 
 	int ret = test->Run(argc, argv);
 	delete test;
